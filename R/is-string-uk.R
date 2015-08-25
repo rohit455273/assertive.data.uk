@@ -7,6 +7,8 @@
 #' cause an error; otherwise they do not.  Like \code{na.rm} in many
 #' stats package functions, except that the position of the failing
 #' values does not change.
+#' @param severity How severe should the consequences of the assertion be?  
+#' Either \code{"stop"}, \code{"warning"}, \code{"message"}, or \code{"none"}.
 #' @note A single space, in the appropriate place, is allowed but not 
 #' compulsory.
 #' @return \code{is_uk_national_insurance_number} returns \code{TRUE} if the 
@@ -80,6 +82,8 @@ is_uk_car_license <- is_uk_car_licence
 #' cause an error; otherwise they do not.  Like \code{na.rm} in many
 #' stats package functions, except that the position of the failing
 #' values does not change.
+#' @param severity How severe should the consequences of the assertion be?  
+#' Either \code{"stop"}, \code{"warning"}, \code{"message"}, or \code{"none"}.
 #' @note A single space is allowed at the appropriate points (after the first 
 #' two letters and after each pair of numbers) but not compulsory.
 #' @return \code{is_uk_national_insurance_number} returns \code{TRUE} if the 
@@ -132,6 +136,8 @@ is_uk_national_insurance_number <- function(x)
 #' cause an error; otherwise they do not.  Like \code{na.rm} in many
 #' stats package functions, except that the position of the failing
 #' values does not change.
+#' @param severity How severe should the consequences of the assertion be?  
+#' Either \code{"stop"}, \code{"warning"}, \code{"message"}, or \code{"none"}.
 #' @return \code{is_uk_postcode} returns \code{TRUE} if the input string 
 #' contains a valid UK postcode. The {assert_*} function returns nothing but 
 #' throws an error when the \code{is_*} function returns \code{FALSE}.
@@ -179,6 +185,8 @@ is_uk_postcode <- function(x)
 #' cause an error; otherwise they do not.  Like \code{na.rm} in many
 #' stats package functions, except that the position of the failing
 #' values does not change.
+#' @param severity How severe should the consequences of the assertion be?  
+#' Either \code{"stop"}, \code{"warning"}, \code{"message"}, or \code{"none"}.
 #' @note The function doesn't guarantee that the phone number is in use, but 
 #' checks that the format is correct, and that the area code exists.
 #' Spaces, hyphens and round brackets are allowed to appear in arbitrary places.  
