@@ -53,6 +53,7 @@
 #' @export
 is_uk_car_licence <- function(x)
 {
+  x <- coerce_to(x, "character", get_name_in_parent(x))
   #http://regexlib.com/REDetails.aspx?regexp_id=617
   #http://www.dreamincode.net/code/snippet3031.htm
   one_to_999 <- paste0("[1-9]", assertive.strings:::d(0, 2))
@@ -115,6 +116,7 @@ is_uk_car_license <- is_uk_car_licence
 #' @export
 is_uk_national_insurance_number <- function(x)
 {
+  x <- coerce_to(x, "character", get_name_in_parent(x))
   rx <- assertive.strings:::create_regex(
     c(
       "[A-CEGHJ-PR-TW-Z]{1}[A-CEGHJ-NPR-TW-Z]{1}", 
@@ -157,6 +159,7 @@ is_uk_national_insurance_number <- function(x)
 #' @export
 is_uk_postcode <- function(x)
 {
+  x <- coerce_to(x, "character", get_name_in_parent(x))
   #Alternative regex, not used, at 
   #http://www.regexlib.com/REDetails.aspx?regexp_id=1064  
   standard_area <- "(A[BL]|B[ABDHLNRSTX]?|C[ABFHMORTVW]|D[ADEGHLNTY]|E[HNX]?|F[KY]|G[LUY]?|H[ADGPRSUX]|I[GMPV]|JE|K[ATWY]|L[ADELNSU]?|M[EKL]?|N[EGNPRW]?|O[LX]|P[AEHLOR]|R[GHM]|S[AEGKLMNOPRSTY]?|T[ADFNQRSW]|UB|W[ADFNRSV]|YO|ZE)[1-9]?[0-9]"
@@ -201,6 +204,7 @@ is_uk_postcode <- function(x)
 #' @export
 is_uk_telephone_number <- function(x)
 {
+  x <- coerce_to(x, "character", get_name_in_parent(x))
   #Spaces and round brackets appear in arbitrary places; ignore them.
   x <- suppressWarnings(
     assertive.strings:::strip_invalid_chars(x, invalid_chars="[ -()]")
