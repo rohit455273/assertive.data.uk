@@ -31,5 +31,5 @@ Acknowledgments: Development of this package was partially funded by the
     Research Program' funds, a program funded by Qatar Foundation.
 Collate:
     'imports.R'
-    'assert-is-string-uk.R'
-    'is-string-uk.R'
+    'assert-is-data-uk.R'
+    'is-data-uk.R'
