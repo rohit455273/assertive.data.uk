@@ -1,6 +1,7 @@
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](http://www.repostatus.org/#active)
 [![Is the package on CRAN?](http://www.r-pkg.org/badges/version/assertive.data.uk)](http://www.r-pkg.org/pkg/assertive.data.uk)
-[![Build Status](https://semaphoreci.com/api/v1/projects/be9b8242-b59c-4e48-8282-cb4d0788d21e/635101/badge.svg)](https://semaphoreci.com/richierocks/assertive-data-uk)
+[![SemaphoreCI Build Status](https://semaphoreci.com/api/v1/projects/be9b8242-b59c-4e48-8282-cb4d0788d21e/635101/badge.svg)](https://semaphoreci.com/richierocks/assertive-data-uk)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/cu3n5iin5ajyg51o?svg=true)](https://ci.appveyor.com/project/richierocks/assertive-data-uk)
 
 # assertive.data.uk
 
