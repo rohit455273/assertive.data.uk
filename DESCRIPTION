@@ -1,8 +1,8 @@
 Package: assertive.data.uk
 Type: Package
 Title: Assertions to Check Properties of Strings
-Version: 0.0-1
-Date: 2015-10-06
+Version: 0.0-2
+Date: 2016-05-08
 Author: Richard Cotton [aut, cre]
 Maintainer: Richard Cotton <richierocks@gmail.com>
 Authors@R: person("Richard", "Cotton", role = c("aut", "cre"), email =
@@ -33,3 +33,4 @@ Collate:
     'imports.R'
     'assert-is-data-uk.R'
     'is-data-uk.R'
+RoxygenNote: 5.0.1
