@@ -33,4 +33,4 @@ Collate:
     'imports.R'
     'assert-is-data-uk.R'
     'is-data-uk.R'
-RoxygenNote: 5.0.1
+RoxygenNote: 6.1.0
